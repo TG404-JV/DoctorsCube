@@ -1,0 +1,114 @@
+.countries {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.countries .section-title {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 35px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.country-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+    transition: all 0.4s ease;
+    animation: fadeIn 1s ease-out;
+    position: relative;
+}
+
+.country-card:hover {
+    transform: translateY(-15px) rotateZ(2deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.country-flag {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.country-card:hover .country-flag {
+    transform: scale(1.1);
+}
+
+.country-name {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.country-name::after {
+    content: '→';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) translateX(10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.country-card:hover .country-name {
+    color: #008B8B;
+    padding-right: 40px;
+}
+
+.country-card:hover .country-name::after {
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
+}
+
+/* Stats Section */
+.stats {
+    padding: 40px 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    padding: 30px;
+    animation: fadeIn 1s ease-out;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #008B8B;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.stat-number::after {
+    content: '+';
+    position: absolute;
+    font-size: 28px;
+    top: 0;
+    right: -20px;
+}
+
+.stat-text {
+    font-size: 16px;
+    color: #666;
+}

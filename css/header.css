@@ -1,0 +1,76 @@
+header {
+    background: linear-gradient(135deg, #008B8B 0%, #006666 100%);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+header:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 45px;
+    animation: pulse 2.5s infinite;
+}
+
+.logo-text {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #FFD700;
+    transition: width 0.3s ease;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+.header-contact {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header-contact i {
+    margin-right: 8px;
+    animation: pulse 2s infinite;
+    color: #FFD700;
+}
